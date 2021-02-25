@@ -1,18 +1,19 @@
+import Head from "next/Head";
+
 import React from "react";
 import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from "../components/Profile";
 import { CompletedChallenges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
+import { ChallangeBox } from "../components/ChallangeBox";
 
 import styles from "../styles/pages/Home.module.css";
-
-import Head from "next/Head";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Início | Move.it</title>
+        <title>Início | Pomo Healthy</title>
       </Head>
       <ExperienceBar />
 
@@ -22,7 +23,9 @@ export default function Home() {
           <CompletedChallenges />
           <Countdown />
         </div>
-        <div></div>
+        <div>
+          <ChallangeBox />
+        </div>
       </section>
     </div>
   );
