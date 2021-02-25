@@ -1,4 +1,4 @@
-import Head from "next/Head";
+import Head from "next/head";
 
 import React from "react";
 import { ExperienceBar } from "../components/ExperienceBar";
